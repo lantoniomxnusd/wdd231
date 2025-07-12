@@ -11,6 +11,7 @@
     --text-color: #FFFFFF; 
     --font-heading: "Montserrat", sans-serif;
     --font-paragraph: "lora", serif;
+    --background-color: lightgray;
 }
 
 body {
@@ -23,6 +24,46 @@ body {
 h1, h2 {
     font-family: var(--font-heading);
 }
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header span {
+    margin: 20px;
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-align: center;
+}
+
+header img {
+    box-shadow: 1px 1px 5px black;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+#hambtn::before {
+    content:"\2630";
+}
+
+#hambtn.open::before {
+    content:"x";
+}
+
+#hambtn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
 
 nav {
     background-color: var(--secondary-color);
@@ -68,3 +109,14 @@ h2 {
     text-align: center;
 }
 
+.cards {
+    background-color: var(--background-color);
+}
+
+.profilepic img {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+}
