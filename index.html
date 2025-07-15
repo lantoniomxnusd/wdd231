@@ -7,6 +7,7 @@
     <meta name="description" content="Landing page for wdd231 Chamber of Commerce project">
     <meta name="author" content="Luis Antonio Olivares">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/large.css">
     <link rel="stylesheet" href="/styles/base.css">
@@ -15,22 +16,22 @@
     <meta property="og:description" content="Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support.">
     <meta property="og:url" content="https://www.apple.com/">
     <meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743" />
-    <script src="/sripts/course.js" defer></script>
-    <script src="/sripts/date.js" defer></script>
-    <script src="/sripts/navigation.js" defer></script>
+    <script src="/scripts/course.js" defer></script>
+    <script src="/scripts/date.js" defer></script>
+    <script src="/scripts/navigation.js" defer></script>
     
 </head>
 
 <body>
     <header>
-        <img src="https://preview.redd.it/small-cat-v0-i42zd7rhimgc1.jpeg?auto=webp&s=13481c4dd9725c8c749e5b36c41e20fdc6b78921" alt="Logo" width="300" height="200">
-        <span id="headerspan">Site Name</span>
-        <button id="hamBtn"></button>
+        <img src="images/logo.svg" alt="site logo" width="512" height="512">
+        <span id="headerspan">Santa Fe</span>
+        <button id="ham-button" class="hamburger" ></button>
     </header>
 
-    <nav>
-        <ul id="menuLinks">
-            <li><a href="index.html" class = "active">Home</a></li>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
             <li><a href="#">Chamber Project</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
@@ -67,7 +68,7 @@
             <a href="#">X</a>
         </div>
         <p>&copy;<span id="currentyear"></span> Luis Antonio Olivares Medina Mexico</p>
-        <pi id="lastModified"></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

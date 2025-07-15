@@ -78,3 +78,65 @@ const courses = [
         completed: false
     }
 ]
+
+// 2. Function to display courses
+function showCourses(filter) {
+  let filtered;
+
+  if (filter === 'All') {
+    filtered = courses;
+  } else {
+    filtered = courses.filter(function(course) {
+      return course.subject === filter;
+    });
+  }
+
+  // 3. Calculate total credits
+  let total = 0;
+  for (let i = 0; i < filtered.length; i++) {
+    total += filtered[i].credits;
+  }
+
+  // 4. Update the credit count on the page
+  document.querySelector('#totalCredits').textContent = total;
+
+  // 5. Clear any old course list
+  const oldList = document.getElementById('courseList');
+  if (oldList) {
+    oldList.remove();
+  }
+
+  // 6. Make a new list
+  const newList = document.createElement('div');
+  newList.id = 'courseList';
+
+  for (let i = 0; i < filtered.length; i++) {
+    const courseItem = document.createElement('div');
+    courseItem.textContent = filtered[i].subject + ' ' + filtered[i].number + ' - ' + filtered[i].title;
+
+    if (filtered[i].completed === true) {
+      courseItem.classList.add('completed');
+    } else {
+      courseItem.classList.add('not-completed');
+    }
+
+    newList.appendChild(courseItem);
+  }
+
+  // 7. Add new list to the page
+  document.querySelector('.certifications').appendChild(newList);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('#courses button');
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+      const filter = buttons[i].textContent;
+      showCourses(filter);
+    });
+  }
+
+  // Show all courses by default when the page loads
+  showCourses('All');
+});
