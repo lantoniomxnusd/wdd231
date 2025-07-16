@@ -79,3 +79,35 @@ const courses = [
     }
 ]
 
+const allBtn = document.querySelector('#allBtn');
+const cseBtn = document.querySelector('#cseBtn');
+const wddBtn = document.querySelector('#wddBtn');
+
+const courseListContainer = document.getElementById('courseList');
+const totalCreditsElem = document.getElementById('totalCredits');
+
+allBtn.addEventListener('click', () => displayCourses('All'));
+cseBtn.addEventListener('click', () => displayCourses('CSE'));
+wddBtn.addEventListener('click', () => displayCourses('WDD'));
+
+function displayCourses(filter) {
+  let filteredCourses;
+
+  if (filter == 'All') {
+    filteredCourses = courses;
+  }else {
+    filteredCourses = courses.filter(course => course.subject === filter);
+  }
+
+  courseListContainer.innerHTML = '';
+
+  const totalCredits = filteredCourses.reduce((sum,course) => sum + course.credits, 0);
+  totalCreditsElem.textContent= totalCredits;
+
+  filteredCourses.forEach(course => {
+    const courseDiv = document.createElement('div');
+    courseDiv.classList.add('course-card');
+    courseDiv.textContent = `${course.subject} ${course.number}`;
+    courseListContainer.appendChild(courseDiv);
+  });
+}
