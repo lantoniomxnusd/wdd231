@@ -26,4 +26,29 @@
     .navigation a {
         border: none;
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .aboutme {
+        grid-column: 1/3;
+    }
+
+    .certifications {
+        grid-column: 1/4;
+    }
+
+    #courseButtons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #courseList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
 }

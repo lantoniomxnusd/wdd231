@@ -10,7 +10,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -23,7 +23,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -35,7 +35,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -47,7 +47,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -61,7 +61,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -107,6 +107,9 @@ function displayCourses(filter) {
   filteredCourses.forEach(course => {
     const courseDiv = document.createElement('div');
     courseDiv.classList.add('course-card');
+    if(course.completed) {
+      courseDiv.classList.add('completed');
+    }
     courseDiv.textContent = `${course.subject} ${course.number}`;
     courseListContainer.appendChild(courseDiv);
   });
