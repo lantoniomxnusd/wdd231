@@ -11,7 +11,7 @@
     --text-color: #FFFFFF; 
     --font-heading: "Montserrat", sans-serif;
     --font-paragraph: "lora", serif;
-    --background-color: lightgray;
+    --background-color: #eee;
 }
 
 body {
@@ -133,6 +133,8 @@ footer {
     background-color: #ddd;
 }
 
+
+/* ***************************************************************************** */
 h1 {
     margin: 1rem 10px;
     color: var(--primary-color);
@@ -175,4 +177,8 @@ main {
 .cards section{
     margin: 10px 0;
     background-color: var(--background-color);
+}
+
+p{
+    padding: 10px;
 }
