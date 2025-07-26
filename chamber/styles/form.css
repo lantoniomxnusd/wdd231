@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #4A7C59;
+    --secondary-color: #D67D3E;
+    --accent-color: #E8B047;
+    --text-color: white;
+    --font-heading: "Playfair Display";
+    --font-paragraph:"Lato"
+}
+
+
+
+/* -----------Form STyling---------- */
+h1 {
+    color:  var(--primary-color);
+}
+
+.form .benefits-column{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form fieldset{
+    border: 1px solid #ddd;
+    padding: 1rem 3rem 1rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.form legend {
+    color:var(--primary-color);
+    padding: 0 .5rem;
+    font-size: 1.3rem;
+    font-family: var(--font-heading);
+}
+
+.form label{
+    display: block;
+    padding-top: .75rem;
+    color: var(--secondary-color);
+    font-size: 1rem ;
+    font-family: var(--font-paragraph);
+}
+
+
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form select,
+.form textarea{
+    background-color: #f8f8f8;
+    border: solid 1px #ccd;
+    border-radius: 4px;
+    padding: .5rem;
+    width: 100%;
+    font-family: var(--font-paragraph);
+    margin: 0.3rem;
+    
+}
+
+.form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+.form input[type="submit"] {
+    background: linear-gradient(var(--secondary-color), var(--accent-color));
+    color: var(--text-color);
+    border-radius: 4px;
+    padding: 0.9rem;
+    width: 100%;
+    margin: 1rem auto;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+}
+
+
+
+.benefits-column {
+    margin: 1rem 0;
+    padding: 1.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: var(--primary-color)
+    
+}
+
+.benefits-column h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.membership-level {
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+    
+}
+
+.membership-level h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.membership-level ul {
+    padding-left: 1.2rem;
+}
+
+.membership-level li {
+    list-style-type: disc;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+
+/*----------- Validation form --------------*/
+
+.form input:required {
+    border-bottom: 3px solid #ff6b6b;
+}
+
+.form input:required:valid {
+    border-bottom: 3px solid #51cf66;
+}

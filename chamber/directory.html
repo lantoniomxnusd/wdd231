@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Antonio Olivares Chamber</title>
+    <meta name="description" content="Landing page for wdd231 Chamber of Commerce project">
+    <meta name="author" content="Luis Antonio Olivares">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Apple">
+    <meta property="og:description" content="Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support.">
+    <meta property="og:url" content="https://www.apple.com/">
+    <meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743" >
+    <script src="scripts/course.js" defer></script>
+    <script src="/scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <div id = "mode">🌟</div>
+        <span>Ejido Sante Fe Chamber of Commerce</span>
+    </header>
+    <nav>
+        <button id="myButton">☰</button>
+        <ul class = "menuLinks">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html" >Discover</a></li>
+        </ul>
+    </nav>
+        <header class="directory-header">
+            <h1>Business Directory</h1>
+        </header>
+
+    <main>
+        <div class= "menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <div id="cards" class="grid"></div>
+                <section class="weatherCard">
+            <h2>Information</h2>
+            <p>The current temperature in Ruiz, Nayarit, Mexico is</p>
+            <p><span id="nayCurrentTemp"></span></p>
+            <figure>
+            <img id="nayWeatherIcon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+            <figcaption id="nayWeatherFigCap"></figcaption>
+            </figure>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </section>
+      </main>
+
+    <footer>
+        <div class="footer-left">
+        <p><strong>Timbuktu Chamber of Commerce</strong><br>
+        10 Rue De La Paix<br>
+        Timbuktu, Mali 999<br>
+        info@timbuktucc.org<br>
+        (223) 555-2300</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16" ></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16" ></a>
+            <a href="https://www.linkedin.com/in/luis-antonio-olivares-14717a30a/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16" ></a>
+            <a href="https://github.com/lantoniomxnusd/wdd231" target="_blank"><img src="images/github.svg" alt="lnk to github" width="16" height="16" ></a>
+        </div>
+        <p>WDD231 Class Project</footer></p>
+        <p>&copy;<span id="currentyear"></span> Luis Antonio Olivares Medina Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/directory.js"></script>
+</body>

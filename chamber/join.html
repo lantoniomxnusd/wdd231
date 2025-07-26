@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejido Santa Fe Chamber of Commerce Join</title>
+    <meta name="author" content="Luis Antonio Olivares">
+    <meta name="description" content="Ejido Santa Fe Chamber of Commerce Join Form">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
+    <meta property="og:title" content="Layout for Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Foem.com.mx%2Felsoldezacatecas%2Fcultura%2Fheraldica-del-dia-significado-del-escudo-de-armas-de-nayarit-16898143&psig=AOvVaw38AvWkBsADgqttR9Qh52Sd&ust=1742800509692000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCH5fzTn4wDFQAAAAAdAAAAABAK">
+    <meta property="og:url" content="https://lantoniomxnusd.github.io/wdd230/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header>
+        <div id="mode">🌟</div>
+        <span>Ejido Sante Fe Chamber of Commerce</span>
+    </header>
+    <nav>
+        <button id="myButton"></button>
+        <ul class = "menuLinks">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+    <main class="join-container">
+        <h1>Membership Signup</h1>
+            <form method="get" action="thankyou.html" class="form">
+            <fieldset>
+                <legend>Member Information</legend>
+                <label>First Name* <input type="text" id="userName" name="userName" required></label>
+                <label>Last Name*<input type="text" id="userLastName" name="userLastName" required></label>
+                <label>Position*<input type="text" id="position" name="position" pattern="[A-Za-z\s-]{7,}" required></label>
+                <label>Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Phone Number*<input type="tel" id="phone" name="phone" required></label>
+                <label>Business/Organization Name* <input type="text" id="orgName" name="orgName" required></label>
+                <label>Membership Level*<select id="membershipLevel" name="membershipLevel" required>
+                    <option value="">-- Select a Membership Level --</option>
+                    <option value="NP">NP Membership (No fee, for non-profits)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Organization Description <textarea id="orgDescription" name="orgDescription"> </textarea></label>
+                <input type="hidden" id="formTimestamp" name="formTimestamp" value="">
+            </fieldset>
+                <input type="submit" value = "Join">
+            </form>
+
+        <div class="benefits-column">
+            <h2>Membership Benefits</h2>
+            <div class="membership-level">
+                <h3>Free Membership:</h3>
+                    <ul>
+                        <li>No fee</li>
+                        <li>Basic event access</li>
+                    </ul>
+            </div>
+                    
+            <div class="membership-level">
+                <h3>Bronze Membership:</h3>
+                <ul>
+                    <li>Event discounts</li>
+                    <li>Monthly newsletter spotlight</li>
+                </ul>
+            </div>
+                    
+            <div class="membership-level">
+                <h3>Silver Membership:</h3>
+                    <ul>
+                        <li>All Bronze benefits</li>
+                        <li>Training sessions</li>
+                        <li>Ad placement on homepage</li>
+                    </ul>
+            </div>
+                    
+            <div class="membership-level">
+                <h3>Gold Membership:</h3>
+                    <ul>
+                        <li>All Silver benefits</li>
+                        <li>Priority advertising</li>
+                        <li>Exclusive events & sponsor features</li>
+                    </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="chamVisits"></p>
+        <p>Ejido Santa Fe Chamber of Commerce - +52 3231351643 - email: ejidosf@gmail.com - Site Under Construction</p>
+        <p>&copy; 2025 Luis Antonio Olivares | Guadalajara, Mexico 🇲🇽</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

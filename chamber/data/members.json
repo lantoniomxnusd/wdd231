@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Hotel Casa Monte Ruesga",
+            "address": "Av. Juárez 912, Tiro al Blanco, 63626 Ruiz, Nay., Mexico",
+            "phone": "+523192332939",
+            "website": "https://santafefarms.com",
+            "image": "images/hotel_casa_monte_ruesga.webp",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Organic produce specialists"
+        },
+        {
+            "name": "Instituto San Cristóbal",
+            "address": "Huiztilopochtli 76, Ochota, 63600 Ruiz, Nay., Mexico",
+            "phone": "+523192330398",
+            "website": "http://iusc.mx/",
+            "image": "images/instituto_cristobal.webp",
+            "membershipLevel": "Silver",
+            "additionalInfo": "Building materials supplier"
+        },
+        {
+            "name": "Materiales Piña",
+            "address": "Emiliano Zapata 208, Centro, 63600 Ruiz, Nay., Mexico",
+            "phone": "+523192331330",
+            "website": "https://www.facebook.com/profile.php?id=100084720895958",
+            "image": "images/materiales_pina.webp",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Organic produce specialists"
+        },
+        {
+            "name": "Restaurante El fogonero",
+            "address": "Amado Nervo 602, Centro, 63600 Ruiz, Nay., Mexico",
+            "phone": "+523192330548",
+            "website": "https://www.facebook.com/profile.php?id=100064021093479",
+            "image": "images/restaurante_fogonero.webp",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Organic produce specialists"
+        },
+        {
+            "name": "Casa Flores",
+            "address": "Veracruz 27, Centro, 63622 Ruiz, Nay., Mexico",
+            "phone": "+523192330251",
+            "website": "https://www.facebook.com/profile.php?id=100064307130286",
+            "image": "images/casa_flores.webp",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Organic produce specialists"
+        },
+        {
+            "name": "Mueblerías Valdez Baluarte",
+            "address": "Corona Pte. 1, entre corana y victoria, Ángel Flores, 63200 Tuxpan, Nay., Mexico",
+            "phone": "+523192321615",
+            "website": "http://www.valdezbaluarte.mx/",
+            "image": "images/valdez_baluarte.webp",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Organic produce specialists"
+        },
+        {
+            "name": "Pizzería Ruta 72",
+            "address": "Querétaro Nte. 10, Centro, 63233 Tuxpan, Nay., Mexico",
+            "phone": "+523232390229",
+            "website": "https://www.facebook.com/pizzeriaruta72",
+            "image": "images/pizzeria_ruta72.webp",
+            "membershipLevel": "Gold",
+            "additionalInfo": "Organic produce specialists"
+        }
+    ]
+}

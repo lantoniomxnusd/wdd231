@@ -12,5 +12,6 @@
             "name": "Render.com",
             "connectString": "postgresql://cse340db:OAgXFmx1YkpIN95FbPL9btt28OVNmO9I@dpg-d1ib27adbo4c73er84sg-a.oregon-postgres.render.com/cse_340_database_ta8c"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
