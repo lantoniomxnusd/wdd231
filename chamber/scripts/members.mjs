@@ -1,18 +1,10 @@
-const cards = document.querySelector('#cards');
-const gridbutton = document.querySelector('#grid');
-const listbutton = document.querySelector('#list');
-
-
-async function getMemberData() {
+export async function getMembers() {
     const response = await fetch('data/members.json');
     const data = await response.json();
-    // console.table(data.members); 
-    displayMembers (data.members);
-  }
+    return data.members;
+}
 
-getMemberData();
-
-const displayMembers = (members)=> {
+export function renderMembers(members, cardContainer) {
     members.forEach((member)=> {
         let card = document.createElement ('section');
         card.classList.add('card');
@@ -46,20 +38,7 @@ const displayMembers = (members)=> {
         card.appendChild(membershipLevel);
         card.appendChild(additionalInfo);
 
-        cards.appendChild(card);
+        cardContainer.appendChild(card);
     });
 }
 
-
-
-gridbutton.addEventListener("click", () => {
-	cards.classList.add("grid");
-	cards.classList.remove("list");
-	console.log("Switched to Grid view. Class is now:", cards.className);
-});
-
-listbutton.addEventListener("click", () => {
-	cards.classList.add("list");
-	cards.classList.remove("grid");
-	console.log("Switched to List view. Class is now:", cards.className);
-});

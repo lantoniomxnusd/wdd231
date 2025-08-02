@@ -19,19 +19,17 @@
     <meta property="og:image" content="https://lantoniomxnusd.github.io/wdd231/chamber/images/nayarit.webp">
     <meta property="og:url" content="https://lantoniomxnusd.github.io/wdd231/chamber/directory.html">
     <meta name="twitter:card" content="summary_large_image">    
-    <script src="scripts/course.js" defer></script>
-    <script src="/scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    
+    <script type="module" src="scripts/directory.mjs"></script>
+
 </head>
 
 <body>
     <header>
-        <div id = "mode">🌟</div>
+        <!-- <div id = "mode">🌟</div> -->
         <span>Ejido Sante Fe Chamber of Commerce</span>
     </header>
     <nav>
-        <button id="myButton">☰</button>
+        <button id="myButton"></button>
         <ul class = "menuLinks">
             <li><a href="index.html" >Home</a></li>
             <li><a href="directory.html" class="active">Directory</a></li>
@@ -48,7 +46,7 @@
             <button id="list">📄List</button>
         </div>
         <div id="cards" class="grid"></div>
-                <section class="weatherCard">
+                <!-- <section class="weatherCard">
             <h2>Information</h2>
             <p>The current temperature in Ruiz, Nayarit, Mexico is</p>
             <p><span id="nayCurrentTemp"></span></p>
@@ -57,7 +55,7 @@
             <figcaption id="nayWeatherFigCap"></figcaption>
             </figure>
             <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-        </section>
+        </section> -->
       </main>
 
 <footer>
@@ -85,8 +83,7 @@
         </div>
     </div>
 </footer>
-
-    <script src="scripts/directory.js"></script>
+    <script type="module" src="scripts/directory.mjs"></script>
 </body>
 
 </html>
