@@ -1,6 +1,6 @@
 import {getMembers, renderMembers} from './members.mjs';
 
-const spotlightsContainer = document.querySelector('.spotlights');
+const spotlightsContainer = document.querySelector('#spotlights');
 const count = 3;
 
 function getSpotlightItems(array, count) {

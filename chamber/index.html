@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-        <div id = "mode">🌟</div>
+        <!-- <div id = "mode">🌟</div> -->
         <span>Ejido Sante Fe Chamber of Commerce</span>
     </header>
     <nav>
@@ -37,38 +37,48 @@
     </nav>
 
     <main>
-        <div class="hero">
-            <picture>
-            <source srcset="images/santaFe-small.webp" media="(max-width: 500px)">
-            <source srcset="images/santaFe-medium.webp" media="(max-width: 1000px)">
-            <img src="images/santaFe-large.webp" alt = "A panoramic view of Sierra Nayar mountains" width="1500" height="750">
-            </picture>
-            <h1>Welcome to Santa Fe Chamber of Commerce</h1>
+        <div class="home-content">
+            <section class="hero">
+                <picture>
+                <source srcset="images/santaFe-small.webp" media="(max-width: 500px)">
+                <source srcset="images/santaFe-medium.webp" media="(max-width: 1000px)">
+                <img src="images/santaFe-large.webp" alt = "A panoramic view of Sierra Nayar mountains" width="1500" height="750">
+                </picture>
+                <h1>Welcome to Santa Fe Chamber of Commerce!</h1>
+            </section>
+
+            <section class="join" >
+                <h2>Join the Chamber Today</h2>
+                <p>Grow your business and connect with the community.</p>
+                <a href="join.html" class="cta-button">Become a Member</a>
+            </section>
+
+            <section class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><strong>Business Expo:</strong> Aug 15 @ Town Hall</li>
+                    <li><strong>Networking Lunch:</strong> Sept 3 @ Restaurante El Fogonero</li>
+                    <li><strong>Holiday Market:</strong> Dec 1–15 @ Central Park</li>
+                </ul>
+            </section>
+
+
+            <section class="weatherCard">
+                <h2>Weather</h2>
+                <p>The current temperature in Ruiz, Nayarit, Mexico is</p>
+                <p><span id="nayCurrentTemp"></span></p>
+                <figure>
+                <img id="nayWeatherIcon" src="images/weather.png" alt="sunny weather">
+                <figcaption id="nayWeatherFigCap"></figcaption>
+                </figure>
+                <!-- <p><span class="label">Number of Visits: </span><span class="visits"></span></p> -->
+            </section>
+            
+            <section class="spotlights">
+                <h2 id="spotlights-h2">Business Spotlights</h2>
+                <div id="spotlights"></div>
+            </section>
         </div>
-
-        <section class="join" >
-            <h2>Join the Chamber Today</h2>
-            <p>Grow your business and connect with the community.</p>
-            <a href="join.html" class="cta-button">Become a Member</a>
-        </section>
-
-        <section class="box">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li><strong>Business Expo:</strong> Aug 15 @ Town Hall</li>
-                <li><strong>Networking Lunch:</strong> Sept 3 @ Restaurante El Fogonero</li>
-                <li><strong>Holiday Market:</strong> Dec 1–15 @ Central Park</li>
-            </ul>
-        </section>
-
-
-        <div class="card">
-            <h2>Weather</h2>        
-        </div>
-        <section>
-            <h2>Business Spotlights</h2>
-            <div class="spotlights"></div>
-        </section>
     </main>
 
     <footer>
@@ -97,6 +107,6 @@
 
   <script src="scripts/chamber.js"></script>
   <script type="module" src="scripts/spotlights.mjs"></script>
-
+  <script src="scripts/weather.js"></script>
 </body>
 </html>
