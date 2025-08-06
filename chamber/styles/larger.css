@@ -1,94 +1,156 @@
 @media only screen and (min-width: 768px) {
-    /* main {
-        display: grid;
-        grid-template-columns: 1fr  1fr 1fr;
-        column-gap: 10px;
+    body {
+        margin: 0 auto;
+        padding: 0;
     }
 
-    main h1 {
+    /* ============ HEADER & NAVIGATION ============ */
+    header {
         display: flex;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
     }
 
-    nav ul {
-        display: flex;
+    nav {
+        background: transparent;
+        margin: 0;
     }
 
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
-    .hero span {
-        font-size: 2rem;
-    }
-
-    .discover {
-        font-size: 2rem;
-    }
-    
     #myButton {
         display: none;
     }
 
-    ul.menuLinks, ul.menuLinks.open {
-        display:flex;
-
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex !important;
+        gap: 1.5rem;
+        padding: 0;
     }
 
-    .discover {
+    nav a {
+        padding: 1rem 0;
+        position: relative;
+    }
+
+    nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-color);
+        transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    /* ============ MAIN GRID LAYOUT ============ */
+    main {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "hero hero hero"
+            "join events weather"
+            "spotlights spotlights spotlights";
+        gap: 1.5rem;
+        padding: 1.5rem;
     }
 
-    .gallery {
+    /* ============ HERO SECTION ============ */
+    .hero {
+        grid-area: hero;
+        height: 450px;
+        margin-bottom: 0;
+    }
+
+    .hero img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        bottom: 3rem;
+        left: 3rem;
+        right: auto;
+        max-width: 60%;
+        margin: 0;
+        padding: 1.5rem;
+        text-align: left;
+    }
+
+    /* ============ CONTENT CARDS ============ */
+    .join,
+    .events,
+    .weatherCard {
+        margin: 0;
         display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      
-    .counter {
-        display: flex;
-        grid-column-start: 1;
-        grid-column-end: 3;
+        flex-direction: column;
     }
 
-
-    .hover:hover {box-shadow: 0 0 50px #333;
+    .join {
+        grid-area: join;
+        justify-content: space-between;
     }
 
-    .join-container {
+    .events {
+        grid-area: events;
+    }
+
+    .weatherCard {
+        grid-area: weather;
+        justify-content: center;
+    }
+
+    /* ============ SPOTLIGHTS ============ */
+    .spotlights {
+        grid-area: spotlights;
+        margin-top: 0;
+    }
+
+    #spotlights {
         display: grid;
-        grid-template-columns: 1fr 2fr; 
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .spotlight-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* ============ FOOTER ============ */
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: none;
         gap: 2rem;
     }
 
-    .join-container h1 {
-        grid-column: 1 /3; 
+    .footer-left,
+    .footer-right {
+        flex: 1;
     }
 
-
-    .menu{
-        grid-column: 1/3;
-
-    }
-    }
-    .grid {
-        grid-column: 1/3;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-        align-items: stretch;
+    .footer-center {
+        order: 0;
     }
 
-    .list {
-        grid-column: 1/3;
-        align-items: center;
-        gap: 0.5rem;
+    .footer-right {
+        text-align: right;
     }
+}
 
-
- */
