@@ -38,7 +38,7 @@
         <h1>Membership Signup</h1>
             <form method="get" action="thankyou.html" class="form">
             <fieldset>
-                <legend>Member Information</legend>
+                <legend>Membership Application Form</legend>
                 <label>First Name* <input type="text" id="userName" name="userName" required></label>
                 <label>Last Name*<input type="text" id="userLastName" name="userLastName" required></label>
                 <label>Position*<input type="text" id="position" name="position" pattern="[A-Za-z\s-]{7,}" required></label>
@@ -53,56 +53,50 @@
                     <option value="Gold">Gold Membership</option>
                     </select>
                 </label>
-                <label>Organization Description <textarea id="orgDescription" name="orgDescription"> </textarea></label>
+                <label>Organization Description
+                    <textarea id="orgDescription" name="orgDescription"></textarea>
+                </label>
                 <input type="hidden" id="formTimestamp" name="formTimestamp" value="">
             </fieldset>
                 <input type="submit" value = "Join">
             </form>
 
-        <div class="benefits-column">
-            <h2>Membership Benefits</h2>
-            <div class="membership-level">
-                <h3>Free Membership:</h3>
-                    <ul>
-                        <li>No fee</li>
-                        <li>Basic event access</li>
-                    </ul>
+            <div class="benefits-column" id="membershipContainer">
+                <h2>Membership Levels</h2>
+                <div id="levels" class="levels-list"></div>
+                <dialog id="dialogBox">
+                    <div>
+                        <h3>Sample Title</h3>
+                        <button>X</button>
+                    </div>
+                    <p></p>
+                </dialog>
             </div>
-                    
-            <div class="membership-level">
-                <h3>Bronze Membership:</h3>
-                <ul>
-                    <li>Event discounts</li>
-                    <li>Monthly newsletter spotlight</li>
-                </ul>
-            </div>
-                    
-            <div class="membership-level">
-                <h3>Silver Membership:</h3>
-                    <ul>
-                        <li>All Bronze benefits</li>
-                        <li>Training sessions</li>
-                        <li>Ad placement on homepage</li>
-                    </ul>
-            </div>
-                    
-            <div class="membership-level">
-                <h3>Gold Membership:</h3>
-                    <ul>
-                        <li>All Silver benefits</li>
-                        <li>Priority advertising</li>
-                        <li>Exclusive events & sponsor features</li>
-                    </ul>
-            </div>
-        </div>
     </main>
 
     <footer>
-        <p class="chamVisits"></p>
-        <p>Ejido Santa Fe Chamber of Commerce - +52 3231351643 - email: ejidosf@gmail.com - Site Under Construction</p>
-        <p>&copy; 2025 Luis Antonio Olivares | Guadalajara, Mexico 🇲🇽</p>
-        <p id="lastModified"></p>
+    <div class="footer-container">
+        <div class="footer-left">
+            Ejido Santa Fe Chamber of Commerce<br>
+            10 Calle Ejemplo<br>
+            Ruiz, Nayarit 63600<br>
+            ejidosf@gmail.com<br>
+            +52 3231351643
+        </div>
+        <div class="footer-center">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="60" height="60"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="60" height="60"></a>
+            <a href="https://www.linkedin.com/in/luis-antonio-olivares-14717a30a/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="60" height="60"></a>
+            <a href="https://github.com/lantoniomxnusd/wdd231" target="_blank"><img src="images/github.svg" alt="github" width="60" height="60"></a>
+        </div>
+        <div class="footer-right">
+            WDD231 Class Project<br>
+            Luis Antonio Olivares<br>
+            &copy; 2025 Ejido Santa Fe Chamber<br>
+            Last Modification: <span id="lastModified"></span>
+        </div>
+    </div>
     </footer>
-    <script src="scripts/chamber.js"></script>
+    <script src="scripts/chamber.js" type="module" ></script>
 </body>
 </html>
